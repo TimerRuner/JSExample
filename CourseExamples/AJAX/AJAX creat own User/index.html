@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="user-actions-wrap mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col col-4">
+            <div class="card">
+              <div class="card-header">
+                Add new user
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <form name="new-user-form">
+                  <div class="form-group">
+                    <label for="userName">User name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="userName"
+                      name="name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="userEmail">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="userEmail"
+                      aria-describedby="emailHelp"
+                      name="email"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >We'll never share your email with anyone else.</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="userPhone">User phone</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="userPhone"
+                      name="phone"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="userWebsite">User website</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="userWebsite"
+                      name="website"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col col-4 -->
+          <div class="col col-6">
+            <div class="card">
+              <div class="card-header">
+                Users List
+              </div>
+              <div class="list-group users-list"></div>
+            </div>
+          </div>
+          <!-- /.col col-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.user-actions-wrap -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

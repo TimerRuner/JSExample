@@ -1,0 +1,608 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+  justify-content: center;
+
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.justify-items-between {
+  justify-content: space-between;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header styles */
+.header .brand-logo {
+  position: static;
+}
+
+.header .favorites {
+  margin-left: 20px;
+}
+
+.header .currency-select input.select-dropdown {
+  margin: 0;
+  color: #fff;
+  border-bottom: none;
+}
+
+.header .currency-select input.select-dropdown:focus {
+  border-bottom: none;
+}
+
+.header .currency-select {
+  width: 120px;
+}
+
+.header .currency-select .caret {
+  fill: #fff;
+}
+
+.header .brand-logo {
+  font-size: 1.5rem;
+}
+
+.favorites .dropdown-content {
+  max-width: 400px !important;
+  color: #000;
+}
+
+.favorites .favorite-item-airline-img {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.favorites .favorite-item-info {
+  flex-grow: 1;
+  padding: 10px;
+  line-height: 1;
+  height: auto;
+}
+
+.favorites .favorite-item-info .material-icons {
+  line-height: 1;
+  height: auto;
+}
+
+.favorites .favorite-item-destination {
+  border-bottom: 1px dashed gray;
+  margin-bottom: 5px;
+}
+
+.favorites .ticket-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.favorites .ticket-additional-info {
+  font-size: 12px;
+}
+
+.favorites .ticket-time-departure {
+  font-size: 14px;
+}
+
+.favorites .delete-favorite {
+  margin-top: 10px;
+}
+
+.ticket-card {
+  padding: 10px 15px;
+}
+
+.ticket-airline-name {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.ticket-airline-img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.ticket-destination {
+  margin-bottom: 10px;
+  border-bottom: 1px dashed gray;
+}
+
+.ticket-destination .ticket-city {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.ticket-destination i.material-icons {
+  font-size: 26px;
+}
+
+.ticket-time-departure {
+  font-weight: bold;
+  color: gray;
+}
+
+.ticket-price {
+  font-size: 25px;
+  padding: 5px;
+  background: #6a1b9a;
+  color: #fff;
+}
+
+.ticket-additional-info {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ticket-card .add-favorite {
+  margin-top: 10px;
+}
+
+.tickets-empty-res-msg {
+  padding: 10px 15px;
+  text-align: center;
+  background: whitesmoke;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+
+.favorites{
+  position: relative;
+}
+.favorites-counter-wrapper{
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: rgb(132, 97, 189);
+
+  border-radius: 50%;
+
+}
+.favorites-counter{
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+
+.tickets-sections .container .row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -1%;
+}
+
+.ticket-item{
+  width: 48%;
+  padding: 0 1%;
+  min-width: 420px;
+  margin: 0;
+}
+.mx-auto{
+  width: 50%;
+  min-width: 440px;
+}
+.nav-wrapper .container{
+  justify-content: space-between;
+}
+.header .currency-select {
+  width: 30px;
+}
+.tickets-brand-logo{
+  font-size: 25px;
+}
+
+.select-dropdown{
+  width: 50px!important;
+}
+.dropdown-content li>a, .dropdown-content li>span{
+  text-align: center;
+}
+
+.select-dropdown~.dropdown-content {
+  min-width: 0!important;
+}
+
+.favorites #dropdown1.dropdown-content{
+  min-width: 400px!important;
+  white-space: nowrap!important;
+  top: 6px!important;
+
+}
+.favorites #dropdown1.dropdown-content .favorite-item{
+  padding: 10px;
+  align-items: center;
+}
+.favorites #dropdown1.dropdown-content .ticket-time-price,
+.favorites #dropdown1.dropdown-content .ticket-additional-info {
+  margin: 10px 0;
+}
+
+/**===============New Avia Ticket==========================================*/
+.avia-ticket-wrapper{
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease 0.2;
+}
+.avia-ticket-wrapper.locked{
+  display: block;
+  opacity: 1;
+}
+
+
+/**Login form styles =================================================*/
+
+
+.login-form-wrap {
+  width: 70%;
+  background: #fff;
+}
+
+.login-form-wrap .form-card {
+  max-width: 600px;
+  width: 100%;
+}
+
+
+.login-form-wrap .form-card .card-title {
+  color: rgb(180, 180, 180);
+}
+
+.login-greeting-screen {
+  background: rgb(42, 189, 94);
+  width: 50%;
+  padding: 20px;
+}
+
+.login-greeting-screen .login-greeting-screen-text {
+  max-width: 500px;
+}
+
+.login-greeting-screen .login-greeting-screen-text {
+  color: #fff;
+}
+
+.login-greeting-screen .login-greeting-screen-title {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.login-greeting-screen .login-greeting-screen-description {
+  line-height: 1.4;
+}
+
+
+.card-tabs{
+  display: flex;
+}
+.card-tab{
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  vertical-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-tab:first-child{
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-tab._active{
+  border-bottom: none;
+}
+
+.card-body{
+  display: none;
+}
+.card-body._active{
+  display: block;
+}
+
+.login-form-wrap{
+  padding: 100px 0;
+}
+
+.login-greeting-screen,
+.form-card,
+.login-page-wrapp,
+.login-greeting-screen,
+.login-page-wrap
+{
+  transition: all 0.3s ease;
+}
+
+.login-page-wrapp{
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  min-height: 100vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.4s ease;
+}
+.login-page-wrapp.locked{
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.8s ease, opacity 0.2s ease 0.2s, visibility 0.2s ease 0.2s;
+  top: -200%;
+}
+.login-page-wrapp::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: var(--teal);
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+.login-page-wrapp._active::before{
+  opacity: 1;
+}
+
+ .login-form-wrap{
+  width: 100%;
+  transition: background 0.3s ease;
+}
+.login-page-wrapp._active .form-card{
+  margin: 0 auto 30px auto;
+  width: 80%;
+}
+.login-page-wrapp._active .form-card [name="authForm"]{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.login-page-wrapp._active .form-card [name="authForm"] .check-box{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.login-page-wrapp._active .form-card [name="authForm"] .check-box label{
+  margin: 0 10px 0 0;
+}
+.login-page-wrapp._active .form-card [name="authForm"] > label{
+  margin: 0 0 7px 0;
+}
+.login-page-wrapp._active .form-card [name="authForm"] > div{
+  width: 49%;
+  height: auto;
+}
+.login-page-wrapp._active .form-card [name="authForm"] > div.checkbox{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* .login-greeting-screen._hide{
+  width: 0%;
+  padding: 0;
+  position: absolute;
+} */
+/* .login-greeting-screen._hide .login-greeting-screen-text{
+  opacity: 0;
+  visibility: hidden;
+} */
+
+.registration input:not([type]),
+.registration input[type=text]:not(.browser-default),
+.registration input[type=password]:not(.browser-default),
+.registration input[type=email]:not(.browser-default),
+.registration input[type=url]:not(.browser-default),
+.registration input[type=time]:not(.browser-default),
+.registration input[type=date]:not(.browser-default),
+.registration input[type=datetime]:not(.browser-default),
+.registration input[type=datetime-local]:not(.browser-default),
+.registration input[type=tel]:not(.browser-default),
+.registration input[type=number]:not(.browser-default),
+.registration input[type=search]:not(.browser-default),
+.registration textarea.materialize-textarea{
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-sizing: border-box;
+}
+
+.registration [type="radio"]:not(:checked),
+.registration [type="radio"]:checked{
+  position: relative;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.registration label{
+  font-size: 15px;
+  color: #393a3a;
+  display: inline-block;
+  margin: 0 0 3px 0;
+}
+
+.registration .datepicker-modal{
+  height: auto;
+}
+
+
+.registration [type="radio"]:not(:checked),
+.registration [type="radio"]:checked {
+  position: relative;
+  opacity: 1;
+}
+
+.registration .input-field>label{
+  position: relative;
+
+}
+.registration .input-field{
+  margin: 0;
+}
+.registration .input-field>label:not(.label-icon).active{
+  transform: translateY(0px);
+  font-size: 15px;
+  color: #393a3a;
+}
+
+.warning-feedback.invalid-feedback{
+  color: rgb(201, 153, 21);
+}
+.invalid-feedback{
+  position: relative;
+  top: -8px;
+}
+.form-group input[type=text]:not(.browser-default):disabled {
+  background: rgb(141 139 139 / 33%);
+  border: 1px dashed rgba(0, 0, 0, 0.5);
+}
+.login-page-wrapp._active .login-form-wrap{
+  background: rgb(42, 189, 94);
+}
+
+.tickets-brand-logo{
+  text-decoration: none;
+}
+.card-action button{
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.card-action button:hover{
+  color: #fff;
+}
+.avia-ticket-wrapper .datepicker-modal{
+  height: auto;
+}
+@media(max-width: 1140px){
+  .login-page-wrapp{
+    flex-direction: column-reverse;
+    background: rgb(42, 189, 94);
+  }
+  .login-form-wrap, .login-greeting-screen{
+    width: 100%;
+    background: rgb(42, 189, 94);
+  }
+
+  .login-form-wrap{
+    padding: 0;
+    flex: 1 1 auto;
+  }
+  .login-greeting-screen .login-greeting-screen-title,
+  .login-form-wrap .form-card{
+    margin: 0 0 30px 0;
+  }
+  .login-greeting-screen-description{
+    display: none;
+  }
+}
+@media(max-width: 998px){
+  .nav-wrapper .material-icons{
+    display: none;
+  }
+  .favorites #dropdown1.dropdown-content{
+    left: -207px!important;
+  }
+}
+@media(max-width: 768px){
+  .login-page-wrapp._active .form-card [name="authForm"]{
+    flex-direction: column;
+  }
+  .login-page-wrapp._active .form-card [name="authForm"] > div{
+    width: 100%;
+  }
+}
+@media(max-width: 500px){
+  .mx-auto{
+    width: 100%;
+    min-width: 280px;
+  }
+  .tickets-brand-logo {
+    font-size: 15px;
+  }
+  .header .favorites {
+    margin-left: 0px;
+    font-size: 11px!important;
+  }
+  .select-dropdown~.dropdown-content{
+    left: -15px!important;
+  }
+  .favorites #dropdown1.dropdown-content{
+    left: -120px!important;
+  }
+  .favorites #dropdown1.dropdown-content{
+    min-width: 300px!important;
+  }
+  .favorites .favorite-item-airline-img {
+    max-width: 54px!important;
+  }
+  .favorites #dropdown1.dropdown-content .favorite-item {
+    align-items: flex-start!important;
+  }
+}
+@media(max-width: 450px){
+  .ticket-item{
+    min-width: 300px;
+    width: 95%;
+  }
+  .ticket-airline-name, .material-icons{
+    display: none;
+  }
+  .ticket-city{
+    font-size: 20px;
+    margin: 0;
+  }
+  .ticket-price{
+    font-size: 18px;
+  }
+  .ticket-airline-img{
+    max-width: 80px;
+  }
+  .ticket-time-price{
+    margin: 0 0 13px 0;
+  }
+}

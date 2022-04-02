@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="lib/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css"> -->
+    <title>Avia Login</title>
+  </head>
+  <body>
+    <div class="avia-ticket-wrapper">
+      <nav class="header purple darken-1">
+        <div class="nav-wrapper">
+          <div class="container d-flex align-items-center">
+            <div class="logo d-flex align-items-center">
+              <i class="large material-icons">flight_takeoff</i>
+              <a href="#" class="tickets-brand-logo">Avia Tickets</a>
+            </div>
+            <div class="favorites">
+
+              <div class="favorites-counter-wrapper">
+                <div class="favorites-counter">
+                  <span>0</span>
+                </div>
+              </div>
+              <a
+                class="dropdown-trigger btn purple lighten-5 black-text"
+                href="#"
+                data-target="dropdown1"
+                >Favorites</a
+              >
+
+              <!-- Dropdown Structure -->
+              <div id="dropdown1" class="dropdown-content">
+
+                <!-- /favorite item -->
+              </div>
+            </div>
+            <ul id="nav-mobile" class="">
+              <li>
+                <div class="input-field currency-select">
+                  <select id="currency">
+                    <option value="USD">$</option>
+                    <option value="EUR">€</option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="form-section">
+        <div class="container">
+          <div class="row d-flex">
+            <div class="mx-auto">
+              <div class="card">
+                <form name="locationControls">
+                  <div class="card-content">
+                    <span class="card-title">Card Title</span>
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        id="autocomplete-origin"
+                        class="autocomplete"
+                      />
+                      <label for="autocomplete-origin">Origin</label>
+                    </div>
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        id="autocomplete-destination"
+                        class="autocomplete"
+                      />
+                      <label for="autocomplete-destination">Destination</label>
+                    </div>
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        class="datepicker"
+                        id="datepicker-depart"
+                      />
+                      <label for="datepicker-depart">Depart date</label>
+                    </div>
+                    <div class="input-field">
+                      <input
+                        type="text"
+                        class="datepicker"
+                        id="datepicker-return"
+                      />
+                      <label for="datepicker-return">Return date</label>
+                    </div>
+                  </div>
+                  <div class="card-action d-flex">
+                    <button
+                      class="btn waves-effect waves-light purple darken-3"
+                      type="submit"
+                      name="action"
+                    >
+                      Search
+                      <i class="material-icons right">send</i>
+                    </button>
+                    <button
+                      class="btn waves-effect waves-light pink darken-3 ml-auto"
+                      type="reset"
+                      name="action"
+                    >
+                      Reset
+                      <i class="material-icons right">cancel</i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tickets-sections">
+        <div class="container">
+          <div class="row">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login form -->
+    <div class="login-page-wrapp">
+      <div class="login-form-wrap d-flex align-items-center">
+        <div class="form-card card ml-auto">
+          <div class="card-tabs">
+            <div class="card-tab _active" data-section="login">Login</div>
+            <div class="card-tab" data-section="registration">Registration</div>
+          </div>
+          <div class="card-body _active login" data-section="login">
+            <h4 class="card-title">Please Login</h4>
+            <form name="loginForm">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                  data-required="email"
+                  data-invalid-message="Please provide valid email example@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                  data-required="password"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+          <div class="card-body registration">
+            <h4 class="card-title">Please Registration</h4>
+            <form name="authForm">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  id="email-auth"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                  data-required="email"
+                  data-invalid-message="Please provide valid email example@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  name="password"
+                  type="password"
+                  class="form-control"
+                  id="password-auth"
+                  placeholder="Password"
+                  data-required="password"
+                  data-invalid-message="Please provide valid password, min size 4 symbols!"
+                />
+              </div>
+              <div class="form-group">
+                <label for="nikname">Nikname</label>
+                <input
+                  name="nikname"
+                  type="text"
+                  class="form-control"
+                  id="nikname-auth"
+                  placeholder="Nikname"
+                  data-required="nikname"
+                  data-invalid-message="Please provide valid Nikname, range is 4-15 symbols!"
+                />
+              </div>
+              <div class="form-group">
+                <label for="name">First Name</label>
+                <input
+                  name="name"
+                  type="text"
+                  class="form-control _text-only"
+                  id="name-auth"
+                  placeholder="Name"
+                  data-required="name"
+                  data-invalid-message="Please provide valid First Name, range is 4-15 symbols!"
+                />
+              </div>
+              <div class="form-group">
+                <label for="surname">Last Name</label>
+                <input
+                  name="surname"
+                  type="text"
+                  class="form-control _text-only"
+                  id="surname-auth"
+                  aria-describedby="emailHelp"
+                  placeholder="Last Name"
+                  data-required="name"
+                  data-invalid-message="Please provide valid Last Name, range is 4-15 symbols!"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input
+                  name="phone"
+                  type="phone"
+                  class="form-control"
+                  id="phone-auth"
+                  placeholder="Phone"
+                  data-required="phone"
+                  data-invalid-message="Please provide valid phone, number is too short!"
+                />
+              </div>
+              <div class="form-group checkbox">
+                <div class="check-box">
+                  <label for="male">Male</label>
+                  <input
+                    name="sex"
+                    type="radio"
+                    class="form-control-radio"
+                    id="male-auth"
+                    value="male"
+                    required="reaquired"
+                  />
+                </div>
+                <div class="check-box">
+                  <label for="female">Female</label>
+                  <input
+                    name="sex"
+                    type="radio"
+                    class="form-control-radio"
+                    value="female"
+                    id="female-auth"
+                    required="reaquired"
+
+                  />
+                </div>
+              </div>
+              <div class="form-group input-field">
+                <label for="country">Country</label>
+                <input
+                  name="country"
+                  type="text"
+                  class="form-control _text-only autocomplete"
+                  id="autocomplete-country"
+                  placeholder="Country"
+                  data-required="name"
+                  data-warning="Please, enter value in English"
+                />
+              </div>
+              <div class="form-group input-field">
+                <label for="city">City</label>
+                <input
+                  name="city"
+                  type="text"
+                  class="form-control _text-only autocomplete"
+                  id="autocompolete-city"
+                  placeholder="City"
+                  data-required="name"
+                  data-warning="Please, enter value in English"
+                  disabled
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="datepicker-birthday">Birthday</label>
+                <input
+                  type="text"
+                  class="form-control datepicker"
+                  id="datepicker-birthday"
+                  placeholder="Birthday"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- /.login-form-wrap -->
+      <div class="login-greeting-screen d-flex align-items-center">
+        <div class="login-greeting-screen-text">
+          <h1 class="login-greeting-screen-title">Welcome to my app</h1>
+          <p class="login-greeting-screen-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            inventore non accusantium earum, illo dolores reprehenderit laborum
+            ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+            ipsa exercitationem eaque totam. A.
+          </p>
+        </div>
+      </div>
+      <!-- /.login-greeting-screen -->
+    </div>
+    <!-- END Login form -->
+    <!-- <script src="lib/materialize.min.js"></script>
+    <script src="js/app.js"></script> -->
+  </body>
+</html>
